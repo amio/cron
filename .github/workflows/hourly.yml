@@ -7,5 +7,7 @@ on:
 jobs:
   triggers:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
     - run: date && curl -sm 60 https://timeout.now.sh/20
