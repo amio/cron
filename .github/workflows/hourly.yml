@@ -2,7 +2,7 @@ name: Hourly
 
 on:
   schedule:
-  - cron: '5 * * * *'
+    - cron: '5 * * * *'
 
 jobs:
   triggers:
@@ -10,4 +10,4 @@ jobs:
     timeout-minutes: 10
 
     steps:
-    - run: date && curl -sm 60 https://timeout.now.sh/20
+      - run: date && curl -sm 60 https://timeout.now.sh/20
